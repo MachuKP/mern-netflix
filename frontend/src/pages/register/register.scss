@@ -1,0 +1,89 @@
+.register{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg");
+    background-size: cover;
+    position: relative;
+
+    .top{
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+
+            .logo{
+                height: 40px;
+            }
+
+            .loginButton{
+                background: red;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 5px 15px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .container{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+        h1{
+            font-size: 50px;
+        }
+
+        h2{
+            margin: 20px;
+        }
+
+        .input{
+            width: 50%;
+            height: 50px;
+            background-color: white;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+
+            input{
+                height: 100%;
+                flex: .75;
+                padding: 0 10px;
+                border: none;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+            }
+
+            .registerButton{
+                height: 100%;
+                flex: .25;
+                background-color: red;
+                color: white;
+                border: none;
+                font-size: 22px;
+                cursor: pointer;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+        }
+    }
+}
